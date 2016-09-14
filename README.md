@@ -1,8 +1,8 @@
 # postcss-class-prefix [![Build Status](https://secure.travis-ci.org/salesforce-ux/postcss-slds-prefix.png?branch=master)](http://travis-ci.org/salesforce-ux/postcss-slds-prefix)
 
-A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace classes.
+A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace `slds-` classes in the [Lightning Design System](https://www.lightningdesignsystem.com/)'s CSS.
 
-Avoid collisions with other versions of the Salesforce Lightning Design System by prefixing your class names with a custom namespace.
+This avoids collisions with other versions of the Salesforce Lightning Design System by prefixing your class names with a custom namespace.
 
 __Example input__
 
