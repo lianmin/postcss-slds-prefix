@@ -20,7 +20,7 @@ function classPrefix(customPrefix) {
 
         return classes.map(function(className){
           if (/^slds\-/.test(className)) {
-            return className.replace(/^slds-/, customPrefix);
+            return className.replace(/^slds-/, customPrefix + '-');
           }
           return className;
         }).join('.');

@@ -11,7 +11,7 @@ __Example input__
 ```
 
 __Example output__
-`sldsPrefix('custom-prefix-')`
+`sldsPrefix('custom-prefix')`
 ```css
 .custom-prefix-classname { /* ... */ }
 ```
@@ -31,7 +31,7 @@ var sldsPrefix = require('postcss-slds-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
 var out = postcss()
-            .use(sldsPrefix('my-prefix-'))
+            .use(sldsPrefix('my-prefix'))
             .process(css);
 ```
 

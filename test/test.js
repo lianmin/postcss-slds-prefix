@@ -10,7 +10,7 @@ function fixture(name) {
 describe('postcss-slds-prefix', function() {
   it('customizes all classes starting with slds-', function() {
     var output = postcss()
-                .use(sldsPrefix('custom-'))
+                .use(sldsPrefix('custom'))
                 .process(fixture('source.css')).css;
     var expected = fixture('source.expected.css');
 
