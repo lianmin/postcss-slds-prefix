@@ -1,30 +1,25 @@
-# postcss-class-prefix [![Build Status](https://secure.travis-ci.org/thompsongl/postcss-class-prefix.png?branch=master)](http://travis-ci.org/thompsongl/postcss-class-prefix)
+# postcss-class-prefix [![Build Status](https://secure.travis-ci.org/salesforce-ux/postcss-slds-prefix.png?branch=master)](http://travis-ci.org/salesforce-ux/postcss-slds-prefix)
 
 A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace classes.
 
-Avoid collisions with other libraries/stylesheets by prefixing your components with a namespace.
+Avoid collisions with other versions of the Salesforce Lightning Design System by prefixing your class names with a custom namespace.
 
 __Example input__
 
 ```css
-.Component { /* ... */ }
-.Component--modifier { /* ... */ }
-.Component-descendent { /* ... */ }
+.slds-classname { /* ... */ }
 ```
 
 __Example output__
-`classPrefix('pfx-')`
+`sldsPrefix('custom-prefix-')`
 ```css
-.pfx-Component { /* ... */ }
-.pfx-Component--modifier { /* ... */ }
-.pfx-Component-descendent { /* ... */ }
+.custom-prefix-classname { /* ... */ }
 ```
-
 
 ## Installation
 
 ```
-npm install postcss-class-prefix
+npm install postcss-slds-prefix
 ```
 
 ## Usage
@@ -32,25 +27,12 @@ npm install postcss-class-prefix
 ```javascript
 var fs        = require('fs');
 var postcss   = require('postcss');
-var classPrfx = require('postcss-class-prefix');
+var sldsPrefix = require('postcss-slds-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
 var out = postcss()
-          .use(classPrfx('my-prefix-'))
-          .process(css);
-```
-
-### Using the `ignore` option
-
-```javascript
-var fs        = require('fs');
-var postcss   = require('postcss');
-var classPrfx = require('postcss-class-prefix');
-
-var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
-var out = postcss()
-          .use(classPrfx('my-prefix-', { ignore: [/ng-/, 'some-class-to-ignore']}))
-          .process(css);
+            .use(sldsPrefix('my-prefix-'))
+            .process(css);
 ```
 
 ## License
@@ -59,4 +41,4 @@ MIT
 
 ## Acknowledgements
 
-* Based on [rework-class-prefix](https://github.com/jnv/rework-class-prefix) ([originally](https://github.com/johnotander/rework-class-prefix))
+* Based on [postcss-class-prefix](https://github.com/thompsongl/postcss-class-prefix)

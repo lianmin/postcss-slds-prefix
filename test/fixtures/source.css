@@ -1,7 +1,15 @@
-.my-class {
+.slds-my-class {
   color: green;
 }
 
-.my-class .with-another-class {
+.slds-my-class .with-another-class {
   box-sizing: border-box;
+}
+
+.slds-my-class .slds-child-class {
+  border: 1px solid red;
+}
+
+.slds-my-class element {
+  margin: 0;
 }

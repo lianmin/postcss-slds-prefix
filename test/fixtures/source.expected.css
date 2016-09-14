@@ -1,7 +1,15 @@
-.prfx-my-class {
+.custom-my-class {
   color: green;
 }
 
-.prfx-my-class .prfx-with-another-class {
+.custom-my-class .with-another-class {
   box-sizing: border-box;
+}
+
+.custom-my-class .custom-child-class {
+  border: 1px solid red;
+}
+
+.custom-my-class element {
+  margin: 0;
 }
