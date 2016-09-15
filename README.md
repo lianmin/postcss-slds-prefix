@@ -25,8 +25,8 @@ npm install postcss-slds-prefix
 ## Usage
 
 ```javascript
-var fs        = require('fs');
-var postcss   = require('postcss');
+var fs         = require('fs');
+var postcss    = require('postcss');
 var sldsPrefix = require('postcss-slds-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
