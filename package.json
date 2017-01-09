@@ -1,6 +1,6 @@
 {
   "name": "postcss-slds-prefix",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A custom prefixer for the Salesforce Lightning Design System",
   "files": [
     "index.js"
